@@ -1,0 +1,347 @@
+
+
+.modal {
+    z-index: 1050; 
+}
+
+
+.modal-backdrop {
+    z-index: 1040; 
+}
+
+
+.modal-dialog {
+    z-index: 1051; 
+    margin: 30px auto; 
+    max-width: 90%;
+}
+
+
+.modal-content {
+    z-index: 1051;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.modal-footer .btn {
+    width: 45%; 
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 440;
+    background-color:  #fcfcfc;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+
+body {
+    padding-top: 60px; 
+}
+
+
+h2 {
+   text-align: center;
+   color: cornflowerblue;
+   width: 100%;
+}
+
+.proceso_mate {
+    margin-bottom: 20px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.frase {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+}
+
+.video_container {
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.imagen_producto {
+    max-width: auto;
+    text-align: center;
+}
+
+.cart-icon {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+
+#productos .productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    justify-content: center;
+}
+
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    justify-content: center;
+}
+
+
+.card {
+    background-color: white;
+    border: 1px solid cornflowerblue;
+    border-radius: 20px;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;   
+    margin-bottom: 10px;
+    object-fit:fill;
+}
+
+.card-body {
+    text-align: center; 
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.card h3 {
+    margin: 10px 0;
+}
+
+
+.card-nombre {
+    color: cornflowerblue;
+    font-size: 170%;
+
+}
+
+
+
+.card-precio {
+    font-size: 120%;
+
+}
+
+.card button {
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#cart-total {
+    color: black;
+    font-weight: bold;
+}
+
+
+@media (max-width: 1024px) {
+    
+    .card {
+        width: 45%;
+    }
+
+  
+    .productos-container {
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+ 
+    .card {
+        width: 100%;
+    }
+
+
+    .productos-container {
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+
+    .producto img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .producto h3 {
+        font-size: 1rem;
+    }
+
+    .producto p {
+        font-size: 0.9rem;
+    }
+
+    .producto h4 {
+        font-size: 1.4rem;
+        margin: 10px 0;
+        color: cadetblue;
+    }
+
+    .resena {
+        padding: 10px;
+    }
+
+    .resena_grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+
+    .resena img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .resena h3 {
+        font-size: 1rem;
+    }
+
+    .resena p {
+        font-size: 0.9rem;
+    }
+
+    .container_encuesta {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 257px) {
+    .producto img {
+        display: none;
+    }
+
+    .resena img {
+        display: none;
+    }
+
+    p {
+        font-size: small;
+    }
+}
+
+.resenas {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.resena_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.resena {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.resena img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.resena h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.resena p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.rating {
+    font-size: 1.2rem;
+    color: yellow;
+}
+
+.container_encuesta {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+footer {
+    background-color: #fcfcfc;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); 
+    padding: 20px 0;       
+    text-align: center;   
+    bottom: 0;
+    width: 100%;       
+    position: relative;    
+}
+
+#cart-total {
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+
+#cart-total {
+    text-align: right;
+    padding: 10px;
+    margin-top: 10px;
+}
