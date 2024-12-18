@@ -1,6 +1,6 @@
 Autor: Andres Wozniak
 
-Version: 1.0
+Version: 2.0
 
 Proyecto: Este proyecto es parte del curso de "Front End con jS" de Talento Tech
 
@@ -10,4 +10,4 @@ Su cartera de productos esta conformada por mas de 25 tipos de articulos, entre 
 A su vez, existen diferentes lineas por producto: Gauchezca, Deportiva, Politica, Tradicional, etc. 
 Con vistas en actualizar la comunicacion organizacional tanto en redes como en la web es que se usa este curso como pre proyecto de la nueva web de Pegaso. 
 
-Fecha:Noviembre 2024
+Fecha:Diciembre 2024
