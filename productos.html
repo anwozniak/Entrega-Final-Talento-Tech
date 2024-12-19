@@ -10,6 +10,7 @@
     <link rel="icon" href="./favicon.png" type="image/x-icon">
 </head>
 <body>
+
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -32,50 +33,77 @@
         </div>
     </nav>
 
-    <!-- El modal se coloca fuera de la barra de navegación -->
-    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="cartModalLabel">Carrito de Artesanías</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="table-responsive">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Producto</th>
-                                    <th>Cantidad</th>
-                                    <th>Precio</th>
-                                    <th>Subtotal</th>
-                                    <th>Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody id="cart-table-body">
-                            </tbody>
-                        </table>
-                    </div>
-                    <h5 id="cart-total" class="text-end" style="color: black;">Total: $0.00</h5>
-                </div>
-                <div class="modal-footer d-flex justify-content-between">
-                    <button id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</button>
-                    <button id="comprar-carrito-btn" class="btn btn-success">Comprar</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    
+    
 </header>
 
 
 <main>
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Carrito de Artesanías</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Subtotal</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-table-body">
+                        </tbody>
+                    </table>
+                </div>
+                <h5 id="cart-total" class="text-end" style="color: black;">Total: $0.00</h5>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</button>
+                <button id="comprar-carrito" class="btn btn-success">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-    
   <section id="productos">
     <h2>Nuestras Artesanías</h2>
     <div class="productos-container row" id="productos-container">
     </div>
-</section>
+  </section>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="thankYouToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">Artesanías Pegaso</strong>
+        <small>Justo ahora</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        ¡Gracias por tu compra!
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="emptyCartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">Artesanías Pegaso</strong>
+      <small>Justo ahora</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      El carrito está vacío. Agrega productos para realizar la compra.
+    </div>
+  </div>
+</div>
+</div>
 
 </main>
 

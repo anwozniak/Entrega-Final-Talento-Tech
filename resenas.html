@@ -33,7 +33,7 @@
         </div>
     </nav>
 
-    <!-- El modal se coloca fuera de la barra de navegación -->
+    
     <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -50,7 +50,7 @@
                                     <th>Cantidad</th>
                                     <th>Precio</th>
                                     <th>Subtotal</th>
-                                    <th>Acciones</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody id="cart-table-body">
@@ -61,7 +61,7 @@
                 </div>
                 <div class="modal-footer d-flex justify-content-between">
                     <button id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</button>
-                    <button id="comprar-carrito-btn" class="btn btn-success">Comprar</button>
+                    <button id="comprar-carrito" class="btn btn-success">Comprar</button>
                 </div>
             </div>
         </div>
@@ -94,6 +94,35 @@
             
         </div>
     </section>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="thankYouToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto">Artesanías Pegaso</strong>
+            <small>Justo ahora</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            ¡Gracias por tu compra!
+          </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="emptyCartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Artesanías Pegaso</strong>
+          <small>Justo ahora</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          El carrito está vacío. Agrega productos para realizar la compra.
+        </div>
+      </div>
+    </div>
+</div>
+
+
   </main>
   
 
